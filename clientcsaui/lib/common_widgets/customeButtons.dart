@@ -13,10 +13,11 @@ Widget customeColoredButton({
   return InkWell(
     onTap: onTap,
     child: Container(
-      padding: const EdgeInsets.all(15),
+      height: 36.h,
+      //padding: const EdgeInsets.all(0),
       decoration: BoxDecoration(
         color: color,
-        borderRadius: BorderRadius.circular(30.r),
+        borderRadius: BorderRadius.circular(14.r),
         border: Border.all(
           color: primaryColor,
         )
@@ -35,19 +36,20 @@ Widget customeColoredButton({
 
 Widget groupedButton({context, required title1, required title2, required icon1, required icon2, required color, required borderColor}){
   return Padding(
-    padding: EdgeInsets.only(top: 30.h),
+    padding: EdgeInsets.only(top: 8.h),
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Container(
-          padding: const EdgeInsets.all(15),
-          width: MediaQuery.of(context).size.width * 0.35.w,
-          // height: 40.h,
+          padding: EdgeInsets.symmetric(vertical: 10.h),
+          width: 136.w,
+          height: 36.h,
           decoration: BoxDecoration(
               color: color,
-              borderRadius: BorderRadius.circular(30.r),
+              borderRadius: BorderRadius.circular(14.r),
               border: Border.all(
                 color: borderColor,
+                width: 1.w
               )
           ),
           child: Row(
@@ -68,12 +70,12 @@ Widget groupedButton({context, required title1, required title2, required icon1,
           ),
         ),
         Container(
-          padding: const EdgeInsets.all(15),
-          width: MediaQuery.of(context).size.width * 0.35.w,
-          // height: 40.h,
+          padding: EdgeInsets.symmetric(vertical: 10.h),
+          width: 136.w,
+          height: 36.h,
           decoration: BoxDecoration(
               color: color,
-              borderRadius: BorderRadius.circular(30.r),
+              borderRadius: BorderRadius.circular(14.r),
               border: Border.all(
                 color: borderColor,
               )
@@ -100,10 +102,11 @@ Widget groupedButton({context, required title1, required title2, required icon1,
 
 Widget buttonWithIcon({required context, required text, required icon, required buttonColor, required outlineColor}){
   return Container(
-    padding: const EdgeInsets.all(10),
+    //padding: const EdgeInsets.all(10),
+    height: 36.h,
     decoration: BoxDecoration(
       color: buttonColor,
-      borderRadius: BorderRadius.circular(30.r),
+      borderRadius: BorderRadius.circular(14.r),
       border: Border.all(
         color: outlineColor,
       ),

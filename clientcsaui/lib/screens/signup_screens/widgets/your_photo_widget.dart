@@ -18,50 +18,48 @@ class _YourPhotoScreenState extends State<YourPhotoScreen> {
     return Scaffold(
       // appBar: AppBar(),
       backgroundColor: Colors.white,
-      body: Column(
-        children: [
-          SizedBox(height: 80.h,),
-          Container(
-            padding: EdgeInsets.all(20.r),
-            decoration: BoxDecoration(
-              color: filledColor,
-              borderRadius: BorderRadius.circular(15.r),
-              border: Border.all(
-                color: outlineBorderColor
-              )
+      body: SizedBox(
+        width: double.infinity,
+        height: MediaQuery.of(context).size.height * 1,
+        child: Column(
+          children: [
+            SizedBox(height: 80.h,),
+            Container(
+              // height: 148.h,
+              // width: 148.w,
+              padding: EdgeInsets.symmetric(vertical: 38.h, horizontal: 35.w),
+              decoration: BoxDecoration(
+                color: filledColor,
+                borderRadius: BorderRadius.circular(24.r),
+                border: Border.all(
+                  color: outlineBorderColor
+                )
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                ///mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset(cameraPng, height: 48.h,),
+                  SizedBox(height: 8.h,),
+                  Text(uploadPhoto, style: TextStyle(
+                    fontSize: 12.sp,
+                    letterSpacing: 0.5.w,
+                    fontWeight: FontWeight.w500,
+                    color: labelColor
+                  ),),
+                ],
+              ),
             ),
-            child: Column(
-              //crossAxisAlignment: CrossAxisAlignment.center,
-              ///mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.asset(cameraPng, height: 48.h,),
-                SizedBox(height: 8.h,),
-                Text(uploadPhoto, style: TextStyle(
-                  fontSize: 12.sp,
-                  letterSpacing: 0.5.w,
-                  fontWeight: FontWeight.w500,
-                  color: labelColor
-                ),),
-              ],
+            SizedBox(height: 121.h,),
+            customeColoredButton(
+                text: finistsigningup,
+                color: filledColor,
+                outlineColor: outlineBorderColor,
+                textColor: labelColor,
+                onTap: (){}
             ),
-          ),
-          //SizedBox(height: 30.h,),
-          Padding(
-            padding: EdgeInsets.symmetric(vertical: 150.h),
-            child: Column(
-              children: [
-                customeColoredButton(
-                    text: finistsigningup,
-                    color: filledColor,
-                    outlineColor: disabledButtonColor,
-                    textColor: labelColor,
-                    onTap: (){}
-                ),
-                //SizedBox(height: 32.h,),
-              ],
-            ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

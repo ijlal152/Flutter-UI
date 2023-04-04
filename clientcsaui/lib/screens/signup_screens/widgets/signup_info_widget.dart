@@ -35,11 +35,11 @@ class _SignupInformationScreenState extends State<SignupInformationScreen> {
                 warningErrorA: '',
                 controller: 'controller'
             ),
-            SizedBox(height: 18.h,),
-            customTextFormField(hintText: '********', label: password, warningErrorA: warningerror ,controller: 'controller'),
-            SizedBox(height: 18.h,),
+            SizedBox(height: 16.h,),
+            customTextFormField(hintText: '********', label: password, warningErrorA: passwordwarningerror ,controller: 'controller'),
+            SizedBox(height: 16.h,),
             customTextFormField(hintText: '********', label: confirmPassword, warningErrorA: bothpasswordmustmatch ,controller: 'controller'),
-            SizedBox(height: 27.h,),
+            SizedBox(height: 24.h,),
             customeColoredButton(
                 text: signup, color: primaryColor,
                 outlineColor: primaryColor,
@@ -53,16 +53,17 @@ class _SignupInformationScreenState extends State<SignupInformationScreen> {
                 }
             ),
             //SizedBox(height: 50.h,),
-            groupedButton(context: context, title1: google, title2: apple, icon1: googleLogo, icon2: applelogo, color: whiteColor, borderColor: Colors.black),
-            SizedBox(height: 18.h,),
+            groupedButton(context: context, title1: google, title2: apple, icon1: googleLogo, icon2: applelogo, color: whiteColor, borderColor: labelColor),
+            SizedBox(height: 16.h,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(alreadyhaveanaccount, textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: medium,
-                  letterSpacing: 0.28.w,
-                  fontSize: 15.75.sp,
+                  letterSpacing: 0.25.w,
+                  fontSize: 14.sp,
+                  height: 1.42.h,
                   color: lowerheadingColor
                 ),),
                 InkWell(
@@ -71,8 +72,9 @@ class _SignupInformationScreenState extends State<SignupInformationScreen> {
                   },
                   child: Text(login,style: TextStyle(
                       fontFamily: medium,
-                      letterSpacing: 0.28.w,
-                      fontSize: 15.75.sp,
+                      letterSpacing: 0.25.w,
+                      fontSize: 14.sp,
+                      height: 1.42.h,
                       color: primaryColor
                   ),),
                 )

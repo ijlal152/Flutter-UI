@@ -12,24 +12,27 @@ Widget customTextFormField({required hintText, required label, required warningE
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(label, style: TextStyle(
-          fontSize: 13.sp,
+          fontSize: 12.sp,
           fontFamily: medium,
-          letterSpacing: 0.56.w,
+          letterSpacing: 0.5.w,
+          height: 1.33.h,
           color: labelColor
         ),),
         SizedBox(height: 5.h,),
         Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20.r),
+            borderRadius: BorderRadius.circular(14.r),
             border: Border.all(color: sliderColor)
           ),
           child: TextFormField(
             //controller: controller,
             style: TextStyle(
               fontFamily: medium,
-              fontSize: 15.75.sp,
-              letterSpacing: 0.28.w,
-              color: lowerheadingColor
+              fontSize: 14.sp,
+              letterSpacing: 0.25.w,
+              fontWeight: FontWeight.normal,
+              color: lowerheadingColor,
+              height: 1.42.h
             ),
             decoration: InputDecoration(
                 hintText: hintText,
@@ -37,12 +40,12 @@ Widget customTextFormField({required hintText, required label, required warningE
                 filled: true,
                 fillColor: filledColor,
                 focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20.r),
+                  borderRadius: BorderRadius.circular(14.r),
                   borderSide: const BorderSide(color: sliderColor, style: BorderStyle.none)
                 ),
-                contentPadding: const EdgeInsets.all(15),
+                contentPadding: EdgeInsets.symmetric(vertical: 8.h, horizontal: 16.w),
                 border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(20.r),
+                borderRadius: BorderRadius.circular(14.r),
                   borderSide: BorderSide.none
                   // borderSide: BorderSide(
                   //     color: sliderColor,
@@ -58,7 +61,7 @@ Widget customTextFormField({required hintText, required label, required warningE
           style: TextStyle(
             color: labelColor,
             letterSpacing: 0.45.w,
-            fontSize: 13.5.sp
+            fontSize: 12.sp
           ),),
         ) ,
       ],
