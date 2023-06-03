@@ -1,7 +1,6 @@
 import 'package:clientcsaui/utils/colors.dart';
 import 'package:clientcsaui/utils/images_constants.dart';
 import 'package:clientcsaui/utils/string_constants.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
