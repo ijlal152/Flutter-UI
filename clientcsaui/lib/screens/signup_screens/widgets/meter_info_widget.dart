@@ -31,13 +31,13 @@ class _MeterInfoScreenState extends State<MeterInfoScreen> {
                 warningErrorA: '',
                 controller: 'controller'
             ),
-            SizedBox(height: 18.h,),
+            SizedBox(height: 16.h,),
             customTextFormField(hintText: '', label: accountNumber, warningErrorA: '' ,controller: 'controller'),
-            SizedBox(height: 18.h,),
+            SizedBox(height: 16.h,),
             customTextFormField(hintText: '', label: electricityMeterNumber, warningErrorA: '' ,controller: 'controller'),
-            SizedBox(height: 18.h,),
+            SizedBox(height: 16.h,),
             customTextFormField(hintText: 'Select Location', label: waterMeterNumber, warningErrorA: '' ,controller: 'controller'),
-            SizedBox(height: 35.h,),
+            SizedBox(height: 44.h,),
             customeColoredButton(
                 text: next, color: primaryColor,
                 outlineColor: primaryColor,

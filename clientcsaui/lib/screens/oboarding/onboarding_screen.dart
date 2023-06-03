@@ -17,9 +17,11 @@ class OnBoardingScreen extends StatefulWidget {
 }
 
 class _OnBoardingScreenState extends State<OnBoardingScreen> {
-  int pageIndex = 0;
+  //int pageIndex = 0;
 
   final controller = Get.put(OnBoardingControllerOne());
+  //final controller = Get.find<OnBoardingControllerOne>();
+
   @override
   Widget build(BuildContext context) {
     return Obx(
@@ -36,7 +38,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 17.w, vertical: 5.h),
+              padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 5.h),
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -62,7 +64,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       activeColor: primaryColor,
                       width: 40.w,
                     ),
-                    SizedBox(height: 40.h,),
+                    SizedBox(height: 24.h,),
 
                     Column(
                       children: [

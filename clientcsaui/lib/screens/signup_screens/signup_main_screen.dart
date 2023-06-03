@@ -19,6 +19,7 @@ class SignupMainScreen extends StatefulWidget {
 class _SignupMainScreenState extends State<SignupMainScreen> {
 
   final signupController = Get.put(SignupController());
+  //final signupController = Get.find<SignupController>();
 
   @override
   Widget build(BuildContext context) {
@@ -90,7 +91,7 @@ class _SignupMainScreenState extends State<SignupMainScreen> {
           width: double.infinity,
           height: MediaQuery.of(context).size.height * 1,
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 18.w),
+            padding: EdgeInsets.symmetric(horizontal: 16.w),
             child: Column(
               children: [
                 Column(
@@ -113,13 +114,22 @@ class _SignupMainScreenState extends State<SignupMainScreen> {
                       index: signupController.index.value,
                       color: sliderColor,
                       activeColor: primaryColor,
-                      width: 77.w,
+                      width: 69.w,
+                      height: 5.32.h,
+                      space: 4.w,
+                      cornerRadius: 7.1.r,
+                      animationDuration: 1,
                     ),
+                    // CarouselIndicator(
+                    //   count: signupController.demo.length,
+                    //   index: signupController.index.value,
+                    //   color: sliderColor,
+                    //   activeColor: primaryColor,
+                    //   width: 69.w,
+                    // ),
                   ],
                 ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.1.h,
-                ),
+                SizedBox(height: 36.h,),
                 Expanded(
                   //height: 300.h,
                   child: PageView(

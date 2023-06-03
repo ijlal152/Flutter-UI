@@ -1,3 +1,4 @@
+import 'package:clientcsaui/helper/dependencies.dart';
 import 'package:clientcsaui/screens/splash_screen/splash_screen.dart';
 import 'package:clientcsaui/utils/colors.dart';
 import 'package:clientcsaui/utils/styles.dart';
@@ -6,7 +7,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  //await initDependencies();
   runApp(const MyApp());
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent, // transparent status bar

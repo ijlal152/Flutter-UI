@@ -16,7 +16,7 @@ const cont = "Continue";
 // Signup Screen constants
 const back = "Back", instantaccess = "Instant access to VRA's best services" ,
 email = "Email", password = "Password", confirmPassword = "Confirm Password",
-warningerror = "Passwords must be at least 8 characters long",
+passwordwarningerror = "Passwords must be at least 8 characters long",
 bothpasswordmustmatch = "Both passwords must match", google = "Google",
 apple = "Apple", alreadyhaveanaccount = "Already have an account? ",
 personalInformation = "Personal Information", surname = "Surname",
@@ -40,3 +40,24 @@ const welcomeback = "Welcome back!";
 const forgetpassword = "Forget Password?";
 const loginwithgoogle = "Login with Google";
 const loginwithapple = 'Login with Apple';
+
+// reset password screen
+const passwordReset = "Password Reset";
+const pleaseEnter = "Please enter the email"
+    " that you created your account with";
+const sendCode = "Send Code";
+const enterCode = "Enter Code";
+const wesendacodeto = "We send a code to a a***@gmail.com. Please "
+    "enter the code to reset your password";
+
+const code = "Code", resetPassword = "Reset Password";
+const didntreceiveacode = "Didn't receive a code? ";
+const resendCode = "Reset Code";
+const enterNewPassword = "Enter New Password";
+const pleaseenteranewpassword = "Please enter a new password";
+const newPassword = "New Password";
+const confirmNewPassword = "Confirm New Password";
+const setNewPassword = "Set New Password";
+const congrat = "Congratulations!";
+const youcanloginwith = "You can login with your new password now.";
+const backToHomePage = "Back to Homepage";

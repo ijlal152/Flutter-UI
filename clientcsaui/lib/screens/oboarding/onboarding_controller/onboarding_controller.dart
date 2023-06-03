@@ -7,6 +7,16 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class OnBoardingControllerOne extends GetxController{
+
+  @override
+  void onInit() {
+    // TODO: implement onInit
+    super.onInit();
+
+    //Get.lazyPut(() => ResetPasswordController());
+  }
+
+
   var index = 0.obs;
   final List<Widget> demo = [
     FadeImageWithTextOne(),

@@ -33,13 +33,13 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
                 warningErrorA: '',
                 controller: 'controller'
             ),
-            SizedBox(height: 18.h,),
+            SizedBox(height: 16.h,),
             customTextFormField(hintText: '', label: otherNames, warningErrorA: '' ,controller: 'controller'),
-            SizedBox(height: 18.h,),
+            SizedBox(height: 16.h,),
             customTextFormField(hintText: '', label: phoneNumber, warningErrorA: '' ,controller: 'controller'),
-            SizedBox(height: 18.h,),
+            SizedBox(height: 16.h,),
             customTextFormField(hintText: 'Select Location', label: selectLocation, warningErrorA: '' ,controller: 'controller'),
-            SizedBox(height: 27.h,),
+            SizedBox(height: 44.h,),
             customeColoredButton(
                 text: next, color: primaryColor,
                 outlineColor: primaryColor,
